@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retest Advisor · Lumilens MES (concept)</title>
+<link rel="icon" href="assets/lumilens-logo.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="assets/lumilens-logo.svg" alt="Lumilens" class="logo">
+      <span class="brand-sep"></span>
+      <span class="brand-app">MES</span>
+    </div>
+    <nav class="nav">
+      <a>Line</a>
+      <a>Stations</a>
+      <a>Test data</a>
+      <a class="active">Disposition <span class="new-pill">New</span></a>
+      <a>Golden units</a>
+      <a>Genealogy</a>
+    </nav>
+    <div class="site-chip"><span class="dot"></span>Chon Buri · TX line 2</div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="crumbs">Test <span>›</span> 800G DR8 OSFP <span>›</span> Disposition</div>
+        <h1>Retest Advisor</h1>
+        <p class="lede">Ship, retest or hold each module from the probability that any lane's <em>true</em> TDECQ is over the limit, not from whichever attempt happened to pass. Station offsets come from golden-unit checks; a retest is ordered only when its expected value beats its cost.</p>
+        <div class="meta" id="meta"></div>
+      </div>
+      <div class="glass cost-card">
+        <div class="card-kicker">Decision costs</div>
+        <label class="slider"><span>Escape to customer</span><b id="v-escape"></b><input id="c-escape" type="range" min="500" max="20000" step="500"></label>
+        <label class="slider"><span>Hold a good module</span><b id="v-hold"></b><input id="c-hold" type="range" min="40" max="600" step="20"></label>
+        <label class="slider"><span>One retest (re-mate + measure)</span><b id="v-retest"></b><input id="c-retest" type="range" min="1" max="20" step="1"></label>
+        <div class="progress" id="progress"><div class="bar"></div><span>Replaying line…</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="section-head">
+      <h2>Policy replay</h2>
+      <p id="replay-sub"></p>
+    </div>
+    <div class="card table-card">
+      <table class="policy">
+        <thead><tr><th>Disposition rule</th><th>Shipped</th><th>Escapes</th><th>Escape DPPM</th><th>Good modules held</th><th>Retests</th><th>Shipped on a retest</th><th>Total cost</th></tr></thead>
+        <tbody id="policy-body"></tbody>
+      </table>
+    </div>
+    <div class="insights" id="insights"></div>
+  </section>
+
+  <section class="container grid-2">
+    <div class="card">
+      <div class="card-head stack">
+        <div><h3>Modules the advisor decided differently</h3><p class="muted" id="queue-sub"></p></div>
+        <div class="chips" id="queue-chips"></div>
+      </div>
+      <table class="queue">
+        <thead><tr><th>Serial</th><th>Station</th><th>Worst lane read</th><th>P(any lane out)</th><th>Advisor</th><th>Retest until pass</th><th>Sim. truth</th></tr></thead>
+        <tbody id="queue-body"></tbody>
+      </table>
+      <div class="pager" id="pager"></div>
+    </div>
+    <div class="card unit-card" id="unit"></div>
+  </section>
+
+  <section class="container grid-2 lower">
+    <div class="card">
+      <div class="card-head">
+        <div><h3>Station offsets from golden units</h3><p class="muted">Median of 3 re-mates per shift, tracked with a local-level Kalman filter. Every production attempt is corrected with the latest estimate before it.</p></div>
+        <div class="chips" id="station-chips"></div>
+      </div>
+      <div id="station-chart" class="chart"></div>
+      <div class="legend" id="station-legend"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h3>Is the risk number honest?</h3><p class="muted">Predicted P(any lane out of spec) at the final decision vs what the simulator's ground truth says, for every replayed module.</p></div></div>
+      <div id="calib-chart" class="chart"></div>
+      <table class="mini" id="model-table"></table>
+    </div>
+  </section>
+</main>
+
+<footer class="container foot">Unofficial concept demo by Mohith Gajjela. Not affiliated with Lumilens. Synthetic data.</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

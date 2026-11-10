@@ -1,0 +1,474 @@
+{
+ "generatedBy": "node scripts/seeds.mjs",
+ "seeds": [
+  1000,
+  1001,
+  1002,
+  1003,
+  1004,
+  1005,
+  1006,
+  1007,
+  1008,
+  1009,
+  1010,
+  1011
+ ],
+ "rows": [
+  {
+   "seed": 1000,
+   "single": {
+    "escapes": 27,
+    "falseHolds": 87,
+    "retests": 0,
+    "cost": 150660,
+    "shipped": 7436,
+    "dppm": 3631
+   },
+   "retestUntilPass": {
+    "escapes": 48,
+    "falseHolds": 15,
+    "retests": 891,
+    "cost": 246264,
+    "shipped": 7529,
+    "dppm": 6375
+   },
+   "guardBand": {
+    "escapes": 4,
+    "falseHolds": 103,
+    "retests": 1229,
+    "cost": 43456,
+    "shipped": 7397,
+    "dppm": 541
+   },
+   "bayes": {
+    "escapes": 0,
+    "falseHolds": 86,
+    "retests": 646,
+    "cost": 18064,
+    "shipped": 7410,
+    "dppm": 0
+   }
+  },
+  {
+   "seed": 1001,
+   "single": {
+    "escapes": 29,
+    "falseHolds": 95,
+    "retests": 0,
+    "cost": 162100,
+    "shipped": 7441,
+    "dppm": 3897
+   },
+   "retestUntilPass": {
+    "escapes": 51,
+    "falseHolds": 16,
+    "retests": 878,
+    "cost": 261392,
+    "shipped": 7542,
+    "dppm": 6762
+   },
+   "guardBand": {
+    "escapes": 6,
+    "falseHolds": 114,
+    "retests": 1227,
+    "cost": 55428,
+    "shipped": 7399,
+    "dppm": 811
+   },
+   "bayes": {
+    "escapes": 2,
+    "falseHolds": 101,
+    "retests": 674,
+    "cost": 30876,
+    "shipped": 7408,
+    "dppm": 270
+   }
+  },
+  {
+   "seed": 1002,
+   "single": {
+    "escapes": 30,
+    "falseHolds": 99,
+    "retests": 0,
+    "cost": 167820,
+    "shipped": 7440,
+    "dppm": 4032
+   },
+   "retestUntilPass": {
+    "escapes": 61,
+    "falseHolds": 14,
+    "retests": 864,
+    "cost": 310976,
+    "shipped": 7556,
+    "dppm": 8073
+   },
+   "guardBand": {
+    "escapes": 4,
+    "falseHolds": 117,
+    "retests": 1255,
+    "cost": 46080,
+    "shipped": 7396,
+    "dppm": 541
+   },
+   "bayes": {
+    "escapes": 1,
+    "falseHolds": 91,
+    "retests": 733,
+    "cost": 24312,
+    "shipped": 7419,
+    "dppm": 135
+   }
+  },
+  {
+   "seed": 1003,
+   "single": {
+    "escapes": 18,
+    "falseHolds": 82,
+    "retests": 0,
+    "cost": 104760,
+    "shipped": 7465,
+    "dppm": 2411
+   },
+   "retestUntilPass": {
+    "escapes": 49,
+    "falseHolds": 13,
+    "retests": 833,
+    "cost": 250672,
+    "shipped": 7565,
+    "dppm": 6477
+   },
+   "guardBand": {
+    "escapes": 4,
+    "falseHolds": 105,
+    "retests": 1192,
+    "cost": 43668,
+    "shipped": 7428,
+    "dppm": 539
+   },
+   "bayes": {
+    "escapes": 0,
+    "falseHolds": 84,
+    "retests": 708,
+    "cost": 17952,
+    "shipped": 7445,
+    "dppm": 0
+   }
+  },
+  {
+   "seed": 1004,
+   "single": {
+    "escapes": 28,
+    "falseHolds": 105,
+    "retests": 0,
+    "cost": 158900,
+    "shipped": 7439,
+    "dppm": 3764
+   },
+   "retestUntilPass": {
+    "escapes": 57,
+    "falseHolds": 13,
+    "retests": 871,
+    "cost": 290824,
+    "shipped": 7560,
+    "dppm": 7540
+   },
+   "guardBand": {
+    "escapes": 5,
+    "falseHolds": 118,
+    "retests": 1208,
+    "cost": 51072,
+    "shipped": 7403,
+    "dppm": 675
+   },
+   "bayes": {
+    "escapes": 0,
+    "falseHolds": 87,
+    "retests": 661,
+    "cost": 18304,
+    "shipped": 7429,
+    "dppm": 0
+   }
+  },
+  {
+   "seed": 1005,
+   "single": {
+    "escapes": 16,
+    "falseHolds": 96,
+    "retests": 0,
+    "cost": 97280,
+    "shipped": 7406,
+    "dppm": 2160
+   },
+   "retestUntilPass": {
+    "escapes": 58,
+    "falseHolds": 20,
+    "retests": 934,
+    "cost": 297336,
+    "shipped": 7524,
+    "dppm": 7709
+   },
+   "guardBand": {
+    "escapes": 3,
+    "falseHolds": 104,
+    "retests": 1270,
+    "cost": 38800,
+    "shipped": 7385,
+    "dppm": 406
+   },
+   "bayes": {
+    "escapes": 4,
+    "falseHolds": 80,
+    "retests": 680,
+    "cost": 37120,
+    "shipped": 7410,
+    "dppm": 540
+   }
+  },
+  {
+   "seed": 1006,
+   "single": {
+    "escapes": 24,
+    "falseHolds": 92,
+    "retests": 0,
+    "cost": 136560,
+    "shipped": 7441,
+    "dppm": 3225
+   },
+   "retestUntilPass": {
+    "escapes": 56,
+    "falseHolds": 18,
+    "retests": 873,
+    "cost": 286732,
+    "shipped": 7547,
+    "dppm": 7420
+   },
+   "guardBand": {
+    "escapes": 5,
+    "falseHolds": 105,
+    "retests": 1208,
+    "cost": 48732,
+    "shipped": 7409,
+    "dppm": 675
+   },
+   "bayes": {
+    "escapes": 0,
+    "falseHolds": 102,
+    "retests": 623,
+    "cost": 20852,
+    "shipped": 7407,
+    "dppm": 0
+   }
+  },
+  {
+   "seed": 1007,
+   "single": {
+    "escapes": 22,
+    "falseHolds": 95,
+    "retests": 0,
+    "cost": 127100,
+    "shipped": 7413,
+    "dppm": 2968
+   },
+   "retestUntilPass": {
+    "escapes": 47,
+    "falseHolds": 14,
+    "retests": 929,
+    "cost": 241236,
+    "shipped": 7519,
+    "dppm": 6251
+   },
+   "guardBand": {
+    "escapes": 4,
+    "falseHolds": 95,
+    "retests": 1290,
+    "cost": 42260,
+    "shipped": 7395,
+    "dppm": 541
+   },
+   "bayes": {
+    "escapes": 2,
+    "falseHolds": 77,
+    "retests": 711,
+    "cost": 26704,
+    "shipped": 7411,
+    "dppm": 270
+   }
+  },
+  {
+   "seed": 1008,
+   "single": {
+    "escapes": 21,
+    "falseHolds": 94,
+    "retests": 0,
+    "cost": 121920,
+    "shipped": 7441,
+    "dppm": 2822
+   },
+   "retestUntilPass": {
+    "escapes": 57,
+    "falseHolds": 13,
+    "retests": 869,
+    "cost": 290816,
+    "shipped": 7558,
+    "dppm": 7542
+   },
+   "guardBand": {
+    "escapes": 11,
+    "falseHolds": 100,
+    "retests": 1201,
+    "cost": 77804,
+    "shipped": 7425,
+    "dppm": 1481
+   },
+   "bayes": {
+    "escapes": 4,
+    "falseHolds": 77,
+    "retests": 688,
+    "cost": 36612,
+    "shipped": 7441,
+    "dppm": 538
+   }
+  },
+  {
+   "seed": 1009,
+   "single": {
+    "escapes": 27,
+    "falseHolds": 91,
+    "retests": 0,
+    "cost": 151380,
+    "shipped": 7400,
+    "dppm": 3649
+   },
+   "retestUntilPass": {
+    "escapes": 63,
+    "falseHolds": 17,
+    "retests": 953,
+    "cost": 321872,
+    "shipped": 7510,
+    "dppm": 8389
+   },
+   "guardBand": {
+    "escapes": 3,
+    "falseHolds": 121,
+    "retests": 1344,
+    "cost": 42156,
+    "shipped": 7346,
+    "dppm": 408
+   },
+   "bayes": {
+    "escapes": 2,
+    "falseHolds": 87,
+    "retests": 627,
+    "cost": 28168,
+    "shipped": 7379,
+    "dppm": 271
+   }
+  },
+  {
+   "seed": 1010,
+   "single": {
+    "escapes": 35,
+    "falseHolds": 87,
+    "retests": 0,
+    "cost": 190660,
+    "shipped": 7462,
+    "dppm": 4690
+   },
+   "retestUntilPass": {
+    "escapes": 74,
+    "falseHolds": 10,
+    "retests": 835,
+    "cost": 375140,
+    "shipped": 7578,
+    "dppm": 9765
+   },
+   "guardBand": {
+    "escapes": 7,
+    "falseHolds": 107,
+    "retests": 1206,
+    "cost": 59084,
+    "shipped": 7414,
+    "dppm": 944
+   },
+   "bayes": {
+    "escapes": 5,
+    "falseHolds": 83,
+    "retests": 677,
+    "cost": 42648,
+    "shipped": 7436,
+    "dppm": 672
+   }
+  },
+  {
+   "seed": 1011,
+   "single": {
+    "escapes": 29,
+    "falseHolds": 81,
+    "retests": 0,
+    "cost": 159580,
+    "shipped": 7455,
+    "dppm": 3890
+   },
+   "retestUntilPass": {
+    "escapes": 59,
+    "falseHolds": 17,
+    "retests": 864,
+    "cost": 301516,
+    "shipped": 7549,
+    "dppm": 7816
+   },
+   "guardBand": {
+    "escapes": 4,
+    "falseHolds": 116,
+    "retests": 1222,
+    "cost": 45768,
+    "shipped": 7395,
+    "dppm": 541
+   },
+   "bayes": {
+    "escapes": 3,
+    "falseHolds": 80,
+    "retests": 706,
+    "cost": 32224,
+    "shipped": 7430,
+    "dppm": 404
+   }
+  }
+ ],
+ "summary": {
+  "single": {
+   "escapes": 27,
+   "falseHolds": 93,
+   "retests": 0,
+   "cost": 151020,
+   "dppm": 3640
+  },
+  "retestUntilPass": {
+   "escapes": 57,
+   "falseHolds": 14.5,
+   "retests": 872,
+   "cost": 290820,
+   "dppm": 7541
+  },
+  "guardBand": {
+   "escapes": 4,
+   "falseHolds": 106,
+   "retests": 1224.5,
+   "cost": 45924,
+   "dppm": 541
+  },
+  "bayes": {
+   "escapes": 2,
+   "falseHolds": 85,
+   "retests": 678.5,
+   "cost": 27436,
+   "dppm": 270
+  },
+  "bayesBeatsAllOnCost": 12,
+  "bayesFewerEscapesThanRUP": 12,
+  "bayesFewerRetestsThanRUP": 12,
+  "rupMoreEscapesThanSingle": 12,
+  "n": 12
+ }
+}

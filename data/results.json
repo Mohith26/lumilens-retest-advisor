@@ -1,0 +1,134 @@
+{
+ "generatedBy": "node scripts/report.mjs",
+ "seed": 1009,
+ "evalModules": 7920,
+ "trainModules": 2160,
+ "scores": {
+  "single": {
+   "n": 7920,
+   "shipped": 7400,
+   "held": 520,
+   "escapes": 27,
+   "falseHolds": 91,
+   "trueFails": 456,
+   "tests": 7920,
+   "retests": 0,
+   "shippedOnRetest": 0,
+   "escapesOnRetest": 0,
+   "dppm": 3648.6486486486488,
+   "cost": 151380
+  },
+  "retestUntilPass": {
+   "n": 7920,
+   "shipped": 7510,
+   "held": 410,
+   "escapes": 63,
+   "falseHolds": 17,
+   "trueFails": 456,
+   "tests": 8873,
+   "retests": 953,
+   "shippedOnRetest": 110,
+   "escapesOnRetest": 36,
+   "dppm": 8388.814913448734,
+   "cost": 321872
+  },
+  "guardBand": {
+   "n": 7920,
+   "shipped": 7346,
+   "held": 574,
+   "escapes": 3,
+   "falseHolds": 121,
+   "trueFails": 456,
+   "tests": 9264,
+   "retests": 1344,
+   "shippedOnRetest": 152,
+   "escapesOnRetest": 2,
+   "dppm": 408.38551592703516,
+   "cost": 42156
+  },
+  "bayes": {
+   "n": 7920,
+   "shipped": 7379,
+   "held": 541,
+   "escapes": 2,
+   "falseHolds": 87,
+   "trueFails": 456,
+   "tests": 8547,
+   "retests": 627,
+   "shippedOnRetest": 212,
+   "escapesOnRetest": 2,
+   "dppm": 271.0394362379726,
+   "cost": 28168
+  }
+ },
+ "calibration": [
+  {
+   "lo": 0,
+   "hi": 0.0001,
+   "n": 7093,
+   "expected": 0.01,
+   "observed": 0
+  },
+  {
+   "lo": 0.0001,
+   "hi": 0.001,
+   "n": 150,
+   "expected": 0.06,
+   "observed": 0
+  },
+  {
+   "lo": 0.001,
+   "hi": 0.01,
+   "n": 123,
+   "expected": 0.35,
+   "observed": 2
+  },
+  {
+   "lo": 0.01,
+   "hi": 0.1,
+   "n": 28,
+   "expected": 1.16,
+   "observed": 1
+  },
+  {
+   "lo": 0.1,
+   "hi": 0.5,
+   "n": 59,
+   "expected": 19.85,
+   "observed": 18
+  },
+  {
+   "lo": 0.5,
+   "hi": 0.9,
+   "n": 125,
+   "expected": 91.67,
+   "observed": 97
+  },
+  {
+   "lo": 0.9,
+   "hi": 1.0000001,
+   "n": 342,
+   "expected": 334.15,
+   "observed": 338
+  }
+ ],
+ "gauge": {
+  "laneSd": 0.0699789638136559,
+  "mateSd": 0.056041088029917266,
+  "contamRate": 0.02878408308401137,
+  "contamMean": 0.40263097504059236,
+  "contamSd": 0.13786016202032922
+ },
+ "pop": {
+  "modMean": 2.3536232552277263,
+  "modVar": 0.0808782174682324,
+  "lane": {
+   "pi": 0.011414296461642175,
+   "m0": -0.011478827383171191,
+   "v0": 0.02115899061930287,
+   "m1": 0.9941746898306204,
+   "v1": 0.050622485974256524
+  },
+  "nUsed": 2160
+ }
+}
