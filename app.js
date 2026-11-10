@@ -24,6 +24,13 @@ const hideTip = () => { tip.style.display = 'none'; };
 const sim = simulateLine();
 const SPEC = 3.4;
 const state = { costs: { ...DEFAULT_COSTS }, res: null, filter: 'prevented', page: 0, sel: null, station: sim.cfg.drift.station, runId: 0 };
+// deep links, e.g. #escape=1500&hold=180&retest=4&filter=skipped&station=0
+const hp = new URLSearchParams(location.hash.slice(1));
+if (hp.has('escape')) state.costs.escape = +hp.get('escape');
+if (hp.has('hold')) state.costs.falseHold = +hp.get('hold');
+if (hp.has('retest')) state.costs.retest = +hp.get('retest');
+if (['prevented', 'recovered', 'skipped', 'all'].includes(hp.get('filter'))) state.filter = hp.get('filter');
+if (hp.has('station')) state.station = Math.max(0, Math.min(5, +hp.get('station') | 0));
 let ctx = buildContext(sim, { spec: SPEC, costs: state.costs });
 const S = sim.cfg.stations;
 const evalStart = sim.units[ctx.evalIdx[0]].day, evalEnd = sim.units[ctx.evalIdx[ctx.evalIdx.length - 1]].day;
